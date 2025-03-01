@@ -1,0 +1,204 @@
+/* Body */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* header */
+.header-container {
+    display: flex;
+}
+
+.header-container img {
+    width: 90px;
+    margin: 10px 10px 25px 60px;
+}
+
+.header-container nav {
+    margin: 25px 0px 0px 840px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+/* banner */
+.banner-container img {
+    width: 1530px;
+    margin-left: -10px;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+}
+
+.text2 {
+    display: flex;
+    gap: 10px;
+}
+
+.text2 h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 130px;
+    margin-bottom: 100px;
+}
+
+
+/* specifications */
+.specifications {
+    display: flex;
+}
+
+.specifications img {
+    width: 580px;
+    margin: 0px 80px 0px 90px;
+}
+
+/* specs-container */
+.specs-container {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.specs-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.specs-item:first-child {
+    border-top: none; /* Bỏ đường kẻ trên cùng */
+}
+
+.specs-item:last-child {
+    border-bottom: none; /* Bỏ đường kẻ dưới cùng */
+}
+
+.specs-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 180px;
+}
+
+.specs-value {
+    text-align: right; /* Căn lề phải cho giá trị */
+    flex-grow: 1; /* Đẩy giá trị sang phải hoàn toàn */
+}
+
+/* price */
+.price {
+    color: #555;
+    line-height: 1.5;
+    margin-left: 770px;
+    margin-right: 70px;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    margin-top: 30px;
+}
+
+.gallery-container p {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* gallery-left */
+.gallery-left img {
+    width: 750px;
+    margin-left: -10px;
+}
+
+#img1 {
+    display: flex;
+}
+
+#img1 img {
+    width: 380px;
+}
+
+/* gallery-right */
+.gallery-right img {
+    width: 753px;
+}
+
+#img2 {
+    display: flex;
+}
+
+#img2 img {
+    width: 377px;
+}
+
+/* Mall-container */
+.mall-container {
+    display: flex;
+    gap: 35px;
+}
+
+/* mall-Saigon */
+.mall-Saigon {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.mall-Saigon img {
+    width: 600px;
+}
+
+
+/* mall-Hanoi */
+.mall-Hanoi {
+    margin-top: 100px;
+}
+
+.mall-Hanoi img {
+    width: 600px;
+}
+
+/* text */
+#text {
+    margin-bottom: 20px;
+}
+
+#text span {
+    margin-bottom: 10px;
+}
+
+/* studio */
+.studio {
+    margin: 50px 0px 50px 150px;
+}
+
+#studio-hanoi img {
+    width: 737px;
+}
+
+#studio-hanoi p {
+    line-height: 1.0;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(73, 71, 71);
+    font-size: 20px;
+    color: white;
+    padding: 20px 0px;
+}
