@@ -19,6 +19,7 @@ public class CarDAO extends MyDAO {
         String sql = "SELECT * FROM Car";
 
         try {
+            con = new DBContext().getConnection();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
@@ -43,6 +44,7 @@ public class CarDAO extends MyDAO {
         String sql = "SELECT * FROM Car WHERE name LIKE ?";
 
         try {
+            con = new DBContext().getConnection();
             ps = con.prepareStatement(sql);
             ps.setString(1, "%" + name + "%");
             rs = ps.executeQuery();
@@ -67,6 +69,7 @@ public class CarDAO extends MyDAO {
         String sql = "INSERT INTO Car (name, quantity, price, max_speed, acceleration) VALUES (?, ?, ?, ?, ?)";
 
         try {
+            con = new DBContext().getConnection();
             ps = con.prepareStatement(sql);
             ps.setString(1, car.getName());
             ps.setInt(2, car.getQuantity());
@@ -84,6 +87,7 @@ public class CarDAO extends MyDAO {
         String sql = "DELETE FROM Car WHERE id = ?";
 
         try {
+            con = new DBContext().getConnection();
             ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             ps.executeUpdate();
@@ -97,6 +101,7 @@ public class CarDAO extends MyDAO {
         String sql = "UPDATE Car SET name = ?, quantity = ?, price = ?, max_speed = ?, acceleration = ? WHERE id = ?";
 
         try {
+            con = new DBContext().getConnection();
             ps = con.prepareStatement(sql);
             ps.setString(1, car.getName());
             ps.setInt(2, car.getQuantity());
@@ -109,5 +114,5 @@ public class CarDAO extends MyDAO {
             e.printStackTrace();
         }
     }
-
+    
 }

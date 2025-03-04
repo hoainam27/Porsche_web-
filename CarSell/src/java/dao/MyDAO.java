@@ -9,7 +9,6 @@ public class MyDAO extends DBContext {
     public Connection con = null;
     public PreparedStatement ps = null;
     public ResultSet rs = null;
-    public String xSql = null;
 
     public MyDAO() {
         con = connection;
